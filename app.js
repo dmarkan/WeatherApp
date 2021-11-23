@@ -26,9 +26,9 @@ https.get(url, function (response) {
         const icon = weatherData.weather[0].icon;
         const imageURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
         res.write("<body style='background-image: url(images/image2.jpg); background-size: cover; background-attachment: fixed; background-repeat: no-repeat;'>")
-        res.write("<h2 style='color:#fff;text-align:center;margin-top:30vh;'>The weather os currently " + weatherDescription + "</h2>");
+        res.write("<h2 style='color:#fff;text-align:center;margin-top:30vh;font-size:2.5rem;'>The weather os currently " + weatherDescription + "</h2>");
         res.write("<img style='display: block; margin-left: auto;margin-right: auto;' src=" + imageURL + ">")
-        res.write("<h1 style='color:#fff;text-align:center;'>The temperature in " + query + " is " + temp + " degrees celcius.</h1>");
+        res.write("<h1 style='color:#fff;text-align:center;font-size:3.2rem;'>The temperature in " + query + " is " + temp + " degrees celcius</h1>");
         res.send();
     })
 });

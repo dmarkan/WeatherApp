@@ -13,3 +13,22 @@ body {
     background-attachment: fixed;
     background-size: cover;
 }
+
+h1 {
+    position: absolute;
+    top:5%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 5vh;
+    background: rgba(211, 211, 211, 0.3);
+}
+
+@media (orientation: portrait) {
+    h1 {
+        font-size: 2rem;
+        width: 80vw;
+    }
